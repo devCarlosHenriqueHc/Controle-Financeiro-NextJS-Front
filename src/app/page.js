@@ -5,7 +5,7 @@ import BalanceDisplay from './components/BalanceDisplay';
 import TransactionForm from './components/TransactionForm';
 import TransactionList from './components/TransactionList';
 
-const API_URL = "http://localhost:8080/api/v1/transactions";
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export default function Home() {
   const [transactions, setTransactions] = useState([]);
